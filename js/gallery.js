@@ -32,7 +32,6 @@ function loadImagesForCategory(category, imageCount) {
         const galleryItem = document.createElement('div');
         galleryItem.className = `col-md-4 gallery-item ${category}`;
         galleryItem.innerHTML = `
-            <a href="${imagePath}" class="img-zoom">
                 <div class="gallery-box">
                     <div class="gallery-img">
                         <img src="${imagePath}" class="img-fluid mx-auto d-block" alt="${capitalize(category)}">

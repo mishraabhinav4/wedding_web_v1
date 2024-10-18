@@ -1,0 +1,5 @@
+wedding:5
+engagement:2
+tilak:1
+mehendi:2
+haldi:2

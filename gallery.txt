@@ -1,4 +1,4 @@
-wedding:5
+wedding:7
 engagement:2
 tilak:1
 mehendi:2

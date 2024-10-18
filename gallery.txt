@@ -1,5 +1,5 @@
 wedding:7
-engagement:2
-tilak:1
-mehendi:2
-haldi:2
+engagement:0
+tilak:0
+mehendi:0
+haldi:0

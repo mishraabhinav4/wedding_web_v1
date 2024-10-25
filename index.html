@@ -83,6 +83,18 @@
                     </div>
                 </div>
             </header>
+                <!-- Background Music -->
+            <audio id="backgroundMusic" loop autoplay>
+                <source src="background-music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Mute Button -->
+            <button id="muteButton" style="position: absolute; top: 20px; right: 20px; z-index: 1000;">
+                <i id="muteIcon" class="ti-volume-up"></i>
+            </button>
+
+
             <!-- Couple -->
             <div id="couple" class="bridegroom clear section-padding bg-pink">
                 <div class="container">
@@ -464,6 +476,23 @@
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/gallery.js"></script>
+        <script>
+            // Mute/unmute functionality
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            const muteButton = document.getElementById('muteButton');
+            const muteIcon = document.getElementById('muteIcon');
+        
+            muteButton.addEventListener('click', function() {
+                if (backgroundMusic.muted) {
+                    backgroundMusic.muted = false; // Unmute the music
+                    muteIcon.className = 'ti-volume-up'; // Change icon to volume up
+                } else {
+                    backgroundMusic.muted = true; // Mute the music
+                    muteIcon.className = 'ti-volume-off'; // Change icon to volume off
+                }
+            });
+        </script>
+
     </div>
     
 </body>

@@ -53,14 +53,19 @@
                 </p>
             </div>
         </aside>
+            <!-- Audio Element -->
+    <audio autoplay loop controls>
+        <source src="background_music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
         <!-- Content Section -->
         <div id="oliven-main">
             <!-- Header Video -->
             <header id="home" class="video-fullscreen-wrap position-relative">
                 <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
                 <div class="video-fullscreen-video" data-overlay-dark="5">
-                    <video playsinline="" autoplay="" loop="">
-                       <source src="images/banner_video.mp4" type="video/mp4" autoplay="" loop="">
+                    <video playsinline="" autoplay="" loop="" muted="">
+                       <source src="images/banner_video.mp4" type="video/mp4" autoplay="" loop="" muted="">
                    <!--    <source src="https://duruthemes.com/demo/html/olivia-enrico/video.webm" type="video/webm" autoplay="" loop="" muted=""> -->
                     </video>
                 </div>
@@ -83,17 +88,6 @@
                     </div>
                 </div>
             </header>
-                <!-- Background Music -->
-            <audio id="backgroundMusic" loop autoplay>
-                <source src="background-music.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-
-            <!-- Mute Button -->
-            <button id="muteButton" style="position: absolute; top: 20px; right: 20px; z-index: 1000;">
-                <i id="muteIcon" class="ti-volume-up"></i>
-            </button>
-
 
             <!-- Couple -->
             <div id="couple" class="bridegroom clear section-padding bg-pink">
@@ -477,20 +471,9 @@
         <script src="js/main.js"></script>
         <script src="js/gallery.js"></script>
         <script>
-            // Mute/unmute functionality
-            const backgroundMusic = document.getElementById('backgroundMusic');
-            const muteButton = document.getElementById('muteButton');
-            const muteIcon = document.getElementById('muteIcon');
-        
-            muteButton.addEventListener('click', function() {
-                if (backgroundMusic.muted) {
-                    backgroundMusic.muted = false; // Unmute the music
-                    muteIcon.className = 'ti-volume-up'; // Change icon to volume up
-                } else {
-                    backgroundMusic.muted = true; // Mute the music
-                    muteIcon.className = 'ti-volume-off'; // Change icon to volume off
-                }
-            });
+            // Optional: To ensure autoplay works on mobile, user interaction may be required.
+            const audio = document.querySelector('audio');
+            audio.muted = false; // You can set it to true if you want it muted by default
         </script>
 
     </div>

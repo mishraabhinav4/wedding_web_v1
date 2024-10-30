@@ -1314,14 +1314,14 @@ body.offcanvason .oliven-nav-toggle {
 /* story-wedding */
 
 .story-wedding {
-    -webkit-animation: rotation 12s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
 }
 @-webkit-keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
     }
     to {
-        -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(0deg);
     }
 }
 

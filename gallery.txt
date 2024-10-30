@@ -1,4 +1,4 @@
-wedding:7
+wedding:0
 engagement:0
 tilak:0
 mehendi:0

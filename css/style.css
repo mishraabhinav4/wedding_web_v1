@@ -33,7 +33,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 
-
 /* ===== Default style ===== */
 html,
 body {
@@ -1200,10 +1199,12 @@ body.offcanvason .oliven-nav-toggle {
 #countdown {
     text-align: center;
 }
+
 #countdown .section-head {
     margin-bottom: 15px;
     z-index: 1;
 }
+
 #countdown .section-head span {
     display: block;
     position: relative;
@@ -1213,6 +1214,7 @@ body.offcanvason .oliven-nav-toggle {
     color: #fff;
     margin-bottom: 0;
 }
+
 #countdown .section-head h4 {
     position: relative;
     color: #fff;
@@ -1221,43 +1223,51 @@ body.offcanvason .oliven-nav-toggle {
     font-size: 60px;
     margin-bottom: 0;
 }
+
 #countdown .section-head p {
-        color: #FFF;
+    color: #FFF;
     font-size: 24px;
     margin-bottom: 0;
 }
-#countdown ul{
+
+#countdown ul {
     margin-bottom: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* Adds spacing between countdown items */
 }
+
 #countdown li {
-        font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     display: inline-block;
     font-size: 15px;
     list-style-type: none;
-    padding: 15px;
+    padding: 10px; /* Reduced padding for a more compact look */
     color: #fff;
     line-height: 3em;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+
 #countdown li span {
-      display: block;
+    display: block;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 60px;
     font-weight: 700;
     color: #fff;
     letter-spacing: -1px;
 }
+
 @media all and (max-width: 768px) {
   #countdown li {
     font-size: 12px;
-    padding: 15px;
+    padding: 10px; /* Matches reduced padding */
   }
   #countdown li span {
-    font-size: 60px;
+    font-size: 50px; /* Slightly smaller for mobile */
   }
 }
 

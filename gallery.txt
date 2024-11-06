@@ -1,5 +1,5 @@
-wedding:0
-engagement:0
-tilak:0
-mehendi:0
-haldi:0
+wedding:1
+engagement:1
+tilak:1
+mehendi:1
+haldi:1

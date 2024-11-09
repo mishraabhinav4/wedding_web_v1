@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/vegas.slider.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,35 +61,20 @@
     </audio>
         <!-- Content Section -->
         <div id="oliven-main">
-            <!-- Header Video -->
-            <header id="home" class="video-fullscreen-wrap position-relative">
-                <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
-                <div class="video-fullscreen-video" data-overlay-dark="5">
-                    <video playsinline="" autoplay="" loop="" muted="">
-                       <source src="images/banner_video.mp4" type="video/mp4" autoplay="" loop="" muted="">
-                   <!--    <source src="https://duruthemes.com/demo/html/olivia-enrico/video.webm" type="video/webm" autoplay="" loop="" muted=""> -->
-                    </video>
-                </div>
-                <div class="v-middle caption overlay">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1>Niharika & Abhinav</h1>
-                                <h5>10 December, 2024 – Jamshedpur</h5>
-                            </div>
-                        </div>
-                        <!-- scroll down -->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="arrow bounce text-center">
-                                    <a href="index.html#couple"> <i class="ti-heart"></i> </a>
-                                </div>
+            <!-- Header & Slider --> 
+            <aside id="home" class="hero-section">
+                <div class="container hero-inner h-100">
+                    <div class="row h-100">
+                        <div class="col-md-12 text-center">
+                            <h1 class="hero-title">Olivia & Enrico</h1>
+                            <p class="hero-subtitle">15 December, 2023 – New York</p>
+                            <div class="arrow bounce text-center">
+                                <a href="index.html#couple"> <i class="ti-heart"></i> </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </header>
-
+            </aside>
             <!-- Couple -->
             <div id="couple" class="bridegroom clear section-padding bg-pink">
                 <div class="container">
@@ -514,6 +500,7 @@
         <script src="js/isotope.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script src="js/vegas.slider.min.js"></script>
         <script src="js/main.js"></script>
         <script src="js/gallery.js"></script>
         <script>
@@ -521,7 +508,29 @@
             const audio = document.querySelector('audio');
             audio.muted = false; // You can set it to true if you want it muted by default
         </script>
+        <!-- Vegas Background Slideshow (vegas.slider kenburns) -->
+        <script>
+            $(document).ready(function() {
+                $('#home').vegas({
+                    slides: [{
+                        src: "images/slider.jpg"
+                    }, {
+                        src: "images/slider2.jpg"
+                    }, {
+                        src: "images/slider3.jpg"
+                    }, {
+                        src: "images/slider4.jpg"
+                    }],
+                    overlay: true,
+                    transition: 'fade2',
+                    animation: 'kenburnsDownLeft',
+                    transitionDuration: 1000,
+                    delay: 10000,
+                    animationDuration: 10000
+                });
+            });
 
+        </script>
     </div>
     
 </body>

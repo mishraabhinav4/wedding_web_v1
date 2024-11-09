@@ -1675,6 +1675,14 @@ body.offcanvason .oliven-nav-toggle {
     -o-transform: scale(1.1);
     transform: scale(1.1);
 }
+.location-link {
+    color: inherit; /* Keeps the link color the same as surrounding text */
+    text-decoration: none; /* Removes underline by default */
+}
+.location-link:hover {
+    color: #007bff; /* Optional: Set a different color on hover */
+    text-decoration: underline; /* Adds underline on hover */
+}
 
 
 /* =====  Gift Registry style  ===== */

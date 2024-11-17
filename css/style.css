@@ -1259,7 +1259,7 @@ body.offcanvason .oliven-nav-toggle {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 30px; /* Adds spacing between countdown items */
+    gap: 25px; /* Adds spacing between countdown items */
 }
 
 #countdown li {
